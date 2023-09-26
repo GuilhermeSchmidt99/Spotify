@@ -48,7 +48,7 @@ body {
     width: auto;
 }
 
-#navbar .navbar-container .ul {
+#navbar .navbar-container ul {
     display: flex;
     list-style: none;
     font-weight: bold;
@@ -56,6 +56,7 @@ body {
 
 #navbar .navbar-container ul li {
     padding: 0 20px;
+    list-style: none;
 }
 
 #navbar .navbar-container ul li:nth-child(3) {
@@ -91,4 +92,70 @@ body {
     margin: 15px 0;
     font-size: 1.1rem;
 
+}
+
+/* Footer */ 
+#footer {
+    background: black;
+    color: white;
+}
+
+#footer .footer-content {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+#footer .footer-content .footer-menu {
+    margin: 0 40px;
+   list-style: none;
+}
+
+#footer .footer-content .footer-menu-item {
+    margin: 25px 0;
+
+}
+
+#footer .footer-content .footer-menu p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;    
+}
+
+/* Footer Socials */
+
+.socials {
+    display: flex;
+}
+
+.socials i {
+    margin: 0 20px;
+    font-size: 1.7rem;
+} 
+
+/* Footer info */ 
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-info .footer-info-items {
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .rights {
+
+}
+
+.footer-info .rights .country {
+    display: flex;
+}
+
+.footer-content .rights .country .brazil-flag {
+    height: 20px;
+    width: auto;
 }
