@@ -1,3 +1,11 @@
+:root {
+    --default-green: #1DB954;
+    --light-green: #1ed760;
+    --instagram-color: #F545F5;
+    --twitter-color: #00ACEE;
+    --facebook-color:#3b5998;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +17,7 @@ body {
 }
 /* Utility Classes */
 .btn-primary {
-    background: #1DB954;
+    background: var(--default-green);
     color: white;
     text-transform: uppercase;
     padding: 15px 60px;
@@ -17,6 +25,12 @@ body {
    border-radius: 30px;
    letter-spacing: 1px;
    font-weight: bold;
+   transition: all 500ms ease;
+}
+
+.btn-primary:hover {
+    background: var(--light-green);
+    cursor: pointer;
 }
 
 .logo {
@@ -43,11 +57,6 @@ body {
     padding: 20px 0;
 }
 
-#navbar .navbar-container .logo {
-    height: 40px;
-    width: auto;
-}
-
 #navbar .navbar-container ul {
     display: flex;
     list-style: none;
@@ -56,6 +65,12 @@ body {
 
 #navbar .navbar-container ul li {
     padding: 0 20px;
+    transition: all 500ms ease;
+}
+
+#navbar .navbar-container ul li:hover {
+    color: var(--default-green);
+    cursor: pointer;
 }
 
 #navbar .navbar-container ul li:nth-child(3) {
@@ -113,9 +128,15 @@ body {
    list-style: none;
 }
 
-#footer .footer-content .footer-menu-item {
+#footer .footer-content .footer-menu .footer-menu-item {
     margin: 25px 0;
+    transition: all 500ms ease;
 
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+    color: var(--default-green);
+    cursor: pointer;
 }
 
 #footer .footer-content .footer-menu p {
@@ -134,7 +155,24 @@ body {
 .socials i {
     margin: 0 20px;
     font-size: 1.7rem;
+    transition: all 500ms ease;
 } 
+
+.socials i {
+    cursor: pointer;
+}
+
+.instagram:hover {
+    color: var(--instagram-color);
+}
+
+.twitter:hover {
+    color: var(--twitter-color);
+}
+
+.facebook:hover {
+    color: var(--facebook-color);
+}
 
 /* Footer info */ 
 .footer-info {
@@ -146,20 +184,22 @@ body {
     font-weight: bold;
     color: #919496;
     font-size: 0.75rem;
+    padding-top: 50px;
 }
 
 .footer-info .footer-info-items {
     display: flex;
     list-style: none;
+    transition: all 500ms ease;
+}
+
+.footer-info .footer-info-item:hover {
+    color: var(--default-green);
+    cursor: pointer;
 }
 
 .footer-info .footer-info-items .footer-info-item {
     margin: 0 10px;
-    
-}
-
-.footer-info .rights {
-
 }
 
 .footer-info .rights .country {
@@ -167,10 +207,17 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px;
+    transition: all 500ms ease;
+}
+
+.footer-info .rights .country p:hover{
+    color: var(--default-green);
+    cursor: pointer;
 }
 
 .footer-content .rights .country .brazil-flag {
     height: 20px;
     width: auto;
     display: inline-block;
+    margin-left: 10px;
 }
